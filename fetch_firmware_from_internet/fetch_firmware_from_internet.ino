@@ -1,5 +1,7 @@
 /*
  
+ Modified by harizanov.com to fetch a .bin file from Internet and save to SD card
+ 
  DNS and DHCP-based Web client
  Circuit:
  * Ethernet shield attached to pins 10, 11, 12, 13
@@ -8,6 +10,8 @@
  by David A. Mellis
  modified 12 April 2011
  by Tom Igoe, based on work by Adrian McEwen
+
+ 
  
  */
 
@@ -101,6 +105,11 @@ void loop()
       myFile.close();
       Serial.println("");
       Serial.println("done.");
+	  
+	  /*
+	  cli();
+	  asm volatile("jmp 0x7000");
+	  */
       
   } else {
     // if the file didn't open, print an error:
