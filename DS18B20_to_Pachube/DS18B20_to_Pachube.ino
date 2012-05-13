@@ -27,7 +27,7 @@ OneWire oneWire(4);
 // Pass our oneWire reference to Dallas Temperature. 
 DallasTemperature sensors(&oneWire);
 
-#define PACHUBE_API_KEY				"x7mnG_9KhRvx1yctXm4mT1j4IDqSAKxMMEZTajFTOGFUQT0g" // fill in your API key PACHUBE_API_KEY
+#define PACHUBE_API_KEY				"************************API*************************" // fill in your API key PACHUBE_API_KEY
 #define PACHUBE_FEED_ID				57665 // fill in your feed id
 int ledPin = 9;                 // LED connected to digital pin 9
 
